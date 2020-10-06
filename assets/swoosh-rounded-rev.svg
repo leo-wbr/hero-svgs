@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" x="0px" y="0px" width="240px" height="24px" viewBox="0 0 240 24" enable-background="new 0 0 240 24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill-opacity: 0.33; fill: rgb(255, 255, 255); pointer-events: none;" d="M 0.04 0.256 C 80.62 0.256 161.004 8.25 239.999 24.12 L 239.854 0.031 L 0.04 0.256 Z" transform="matrix(-1, 0, 0, -1, 240.039, 24.151001)"/>
+  <path style="fill-opacity: 0.66; fill: rgb(255, 255, 255); pointer-events: none;" d="M 0.026 2.413 C 80.599 2.413 160.974 9.699 239.961 24.164 L 239.816 2.207 L 0.026 2.413 Z" transform="matrix(-1, 0, 0, -1, 239.986998, 26.370999)"/>
+  <path style="fill: rgb(255, 255, 255);" d="M 0.081 4.016 C 80.641 4.016 161.004 10.773 239.978 24.187 L 239.833 3.825 L 0.081 4.016 Z" transform="matrix(-1, 0, 0, -1, 240.059003, 28.012)"/>
+</svg>
