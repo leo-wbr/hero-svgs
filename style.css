@@ -1,5 +1,7 @@
-/* Base Styles */
-
+/* Variables */
+:root {
+	--bg: ;
+}
 /* Styling Jumbotron */
 .jumbotron {
 	background: url('https://source.unsplash.com/1400x750') center center scroll
@@ -9,12 +11,25 @@
 }
 
 .jumbotron {
-	height: 100vh;
-	margin-bottom: 0;
+	height: 105vh;
+	padding-bottom: 170px;
+	position: relative;
 }
 
 /* Styling Controls Section */
 .controls {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.65);
 	box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.488);
+}
+
+/* Switch SVG */
+.jumbotron:after {
+	display: block;
+	position: absolute;
+	content: '';
+	background: var(--bg) center center no-repeat;
+	background-size: cover;
+	height: 170px;
+	min-width: 100%;
+	bottom: 0;
 }

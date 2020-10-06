@@ -24,13 +24,17 @@
                                 <div class="row controls p-3 rounded">
                                     <div class="btn-group w-100">
                                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            SVG Picker
+                                            SVG Swooshie Picker
                                         </button>
                                         <div class="dropdown-menu w-100">
-                                            <a class="dropdown-item" href="#">👍 Wave</a>
-                                            <a class="dropdown-item" href="#">👍 Reverse Wave</a>
-                                            <a class="dropdown-item" href="#">👍 Pointy Ends</a>
-                                            <a class="dropdown-item" href="#">👍 Slanted</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-wave.svg')" href="#">👋 Wave</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-wave-rev.svg')" href="#">👋 Reverse Wave</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-pointy.svg')" href="#">📯 Pointy Ends</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-pointy-rev.svg')" href="#">📯 Pointy Ends Reverse</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-rounded.svg')" href="#">⚪ Rounded</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-rounded-rev.svg')" href="#">⚪ Rounded Reverse</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-slanted.svg')" href="#">🏄‍♂️ Slanted</a>
+                                            <a class="dropdown-item" name="bg" data-url="url('/assets/swoosh-slanted-rev.svg')" href="#">🏄‍♂️ Slanted Reverse</a>
                                         </div>
                                     </div>
                                 </div>
@@ -69,6 +73,16 @@
     </header>
 
     <!-- Optional JavaScript -->
+    <script>
+
+        const getDropdowns = document.querySelectorAll('.dropdown-item')
+
+        function changeSVG() {
+            document.documentElement.style.setProperty(`--${this.name}`, this.dataset.url);
+        }
+        getDropdowns.forEach(dropdown => dropdown.addEventListener('click', changeSVG))
+
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
