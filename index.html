@@ -72,13 +72,14 @@
         </div>
     </header>
 
-    <!-- Optional JavaScript -->
+    <!-- Swoosh Control Script -->
     <script>
         const getDropdowns = document.querySelectorAll('.dropdown-item')
 
         function changeSVG() {
             document.documentElement.style.setProperty(`--${this.name}`, this.dataset.url);
         }
+
         getDropdowns.forEach(dropdown => dropdown.addEventListener('click', changeSVG))
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
