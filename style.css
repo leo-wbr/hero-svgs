@@ -1,25 +1,22 @@
-/* Variables */
+/* CSS Variables */
 :root {
 	--bg: ;
 }
-/* Styling Controls Section */
-.controls {
-	background-color: rgba(255, 255, 255, 0.65);
-	box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.488);
-}
 
-/* Styling Jumbotron */
+/* Base Jumbotron Styling */
 .jumbotron {
 	background: url('https://source.unsplash.com/1400x750') center center scroll
 		no-repeat;
 	background-size: cover;
 	box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 0.4);
+	height: 100vh;
 }
 
-.jumbotron {
-	height: 105vh;
-	padding-bottom: 170px;
+/* Class added to Jumbotron On click*/
+.jumbotron-swoosh {
 	position: relative;
+	height: 105vh; /* Increase height of Jumbotron on dropdown click */
+	padding-bottom: 170px; /* Add bottom padding same height as the svg element to center copy */
 }
 
 /* Switch SVG */

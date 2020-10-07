@@ -12,6 +12,14 @@
 </head>
 
 <body>
+    <style>
+        /* Styling Controls Section */
+        .controls {
+            background-color: rgba(255, 255, 255, 0.65);
+            box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.488);
+        }
+    </style>
+
     <header>
         <div class="jumbotron jumbotron-fluid d-flex ">
             <div class="container d-flex align-items-center justify-content-center">
@@ -23,7 +31,7 @@
                             <div class="col-md-4 offset-md-4">
                                 <div class="row controls p-3 rounded">
                                     <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             SVG Swooshie Picker
                                         </button>
                                         <div class="dropdown-menu w-100">
@@ -74,14 +82,20 @@
 
     <!-- Swoosh Control Script -->
     <script>
+        const jumbotron = document.querySelector('.jumbotron')
         const getDropdowns = document.querySelectorAll('.dropdown-item')
 
         function changeSVG() {
-            document.documentElement.style.setProperty(`--${this.name}`, this.dataset.url);
+            if (this.name === 'bg') {
+                document.documentElement.style.setProperty(`--${this.name}`, this.dataset.url);
+                jumbotron.classList.add('jumbotron-swoosh')
+            }
         }
 
         getDropdowns.forEach(dropdown => dropdown.addEventListener('click', changeSVG))
+
     </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
