@@ -10,6 +10,7 @@
 	background-size: cover;
 	box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 0.4);
 	height: 100vh;
+	margin-bottom: 0;
 }
 
 /* Class added to Jumbotron On click*/
