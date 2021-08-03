@@ -27,7 +27,7 @@
 	content: '';
 	background: var(--bg) center center no-repeat;
 	background-size: cover;
-	height: 170px;
+	height: 200px;
 	min-width: 100%;
 	bottom: 0;
 }
